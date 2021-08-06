@@ -15,7 +15,7 @@ client.on('message', gotMessage);
 async function gotMessage(msg) {
     if (msg.content === "count for me") // or any command prefix or trigger goes in the quotes.
     {
-        var balls = 137;
+        var balls = 0;
         while (balls < 10000)
         {
             balls++;
