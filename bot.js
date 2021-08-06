@@ -6,19 +6,20 @@ client.login(process.env.counter_token);
 client.on('ready', readyDiscord);
 
 function readyDiscord() {
-  console.log('ayoooooo discord equal connecteddddddd');
+    console.log('ayooooooo discord equal connectedddddd');
 }
 
 client.on('message', gotMessage);
 
+
 async function gotMessage(msg) {
-  if (msg.content === "count for me") // or literally any command prefix or trigger you want goes in the quotes.
-  {
-    var balls = 0;
-    while (balls > 10000)
+    if (msg.content === "count for me") // or any command prefix or trigger goes in the quotes.
     {
-      balls++;
-      msg.channel.send(balls);
-     }
-   }
-}   
+        var balls = 137;
+        while (balls < 10000)
+        {
+            balls++;
+            msg.channel.send(balls);
+        }
+    }
+}
